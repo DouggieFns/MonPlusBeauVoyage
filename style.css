@@ -55,11 +55,9 @@ body {
 /* GALERIE */
 .galerie {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
     padding: 60px 20px;
-    max-width: 1200px;
-    margin: 0 auto;
 }
 
 .galerie img {
@@ -81,8 +79,5 @@ footer {
 @media (max-width: 768px) {
     .hero h1 {
         font-size: 2.2rem;
-    }
-    .galerie {
-        grid-template-columns: repeat(2, 1fr);
     }
 }
